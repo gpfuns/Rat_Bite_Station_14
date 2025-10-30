@@ -13,7 +13,7 @@
   goobcoins: 30
   weight: 20
   startingGear: MedicalOrderlyGear
-  icon: "JobIconMedicalDoctor"
+  icon: "JobIconMedicalOrderly"
   supervisors: ChiefMedicalOfficer
   canBeAntag: false
   access:
@@ -54,7 +54,7 @@
       time: 3600 # 1 hour
 
   startingGear: CargoInsuranceGear
-  icon: "JobIconCargoTechnician"
+  icon: "JobIconCargoInsurance"
   supervisors: Quartermaster
   canBeAntag: false
   goobcoins: 20 #Goob content
@@ -94,7 +94,7 @@
       department: Security
       time: 3600 # 1 hour
   startingGear: ScicurityguardGear
-  icon: "JobIconScientist"
+  icon: "JobIconScicurityGuard"
   supervisors: job-supervisors-rd
   goobcoins: 20 #Goob content
   access:
@@ -132,7 +132,7 @@
       time: 3600 # 1 hour
 
   startingGear: EngiSentryGear
-  icon: "JobIconStationEngineer"
+  icon: "JobIconEngiSentry"
   supervisors: job-supervisors-ce
   canBeAntag: false
   goobcoins: 20 #Goob content
