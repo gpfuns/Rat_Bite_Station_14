@@ -151,7 +151,7 @@
   - extended
   - shittersafari
   name: extended-title
-  showInVote: true #Ratbites, easier to control survival.
+  showInVote: false #Ratbites, easier to control survival.
   description: extended-description
   rules:
   - PermaBrig # RatBite - Multi-Round brig system
@@ -167,7 +167,7 @@
   - greenshift
   - shittersafarideluxeedition
   name: greenshift-title
-  showInVote: true #If the masses want a greenshift there is a reason.
+  showInVote: false #If the masses want a greenshift there is a reason.
   description: greenshift-description
   rules:
   - PermaBrig # RatBite - Multi-Round brig system
