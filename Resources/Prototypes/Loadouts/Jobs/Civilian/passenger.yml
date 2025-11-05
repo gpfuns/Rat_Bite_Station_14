@@ -111,6 +111,22 @@
   equipment:
     mask: ClothingMaskGas
 
+- type: loadout
+  id: MercBandana
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GreyTider
+  equipment:
+    mask: ClothingMaskBandMerc
+
+- type: loadout
+  id: MercBeret
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GreyTider
+  equipment:
+    head: ClothingHeadHatBeretMerc
+
 # Jumpsuits
 # Grey
 - type: loadout
@@ -152,6 +168,31 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitAncient
 
+# Ratbite additions, veteran larp
+- type: loadout
+  id: MercJumpsuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GreyTider
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMercenary
+
+- type: loadout
+  id: MercBlueJumpsuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GreyTider
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryTurtleneckBlueMercenary
+
+- type: loadout
+  id: MercGreenJumpsuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GreyTider
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryTurtleneckMercenary
+
 # Neck
 - type: loadout
   id: Mantle
@@ -190,6 +231,14 @@
     proto: GreyTider
   equipment:
     gloves: ClothingHandsGlovesFingerlessInsulated
+# Ratbite
+- type: loadout
+  id: FingerlessMercGloves
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GreyTider
+  equipment:
+    gloves: ClothingHandsGlovesMercFingerless
 
 # Outerclothing
 - type: loadout

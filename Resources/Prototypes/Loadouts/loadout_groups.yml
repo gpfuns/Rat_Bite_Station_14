@@ -389,6 +389,10 @@
   - AncientJumpsuit
   - RainbowJumpsuit
   - RainbowJumpskirt
+ # Ratbite Additions
+  - MercJumpsuit
+  - MercGreenJumpsuit
+  - MercBlueJumpsuit
  # goob changes start
   - GreyMJ
   - BlackMJ
@@ -408,11 +412,19 @@
  # goob changes end
 
 - type: loadoutGroup
+  id: PassengerHead
+  name: Passenger Head
+  minLimit: 0
+  loadouts:
+  - MercBeret
+
+- type: loadoutGroup
   id: PassengerFace
   name: loadout-group-passenger-mask
   minLimit: 0
   loadouts:
   - PassengerFace
+  - MercBandana
 
 - type: loadoutGroup
   id: PassengerGloves
@@ -420,6 +432,7 @@
   minLimit: 0
   loadouts:
   - PassengerGloves
+  - FingerlessMercGloves
 
 - type: loadoutGroup
   id: CommonBackpack
