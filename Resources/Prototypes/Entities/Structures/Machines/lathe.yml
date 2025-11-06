@@ -438,6 +438,9 @@
     emagStaticPacks:
     - SecurityWeaponsStatic
     - SecurityAmmoStatic
+    # Ratbite station edit start
+    - SecurityAmmoRatbiteStatic
+    # Ratbite station edit end
     # Goobstation
     - SecurityWeaponsStaticGoob
     - SecurityAmmoStaticGoob
@@ -531,6 +534,9 @@
     - SecurityExplosives
     #- SecurityEquipment # Goobstation
     - SecurityWeapons
+    # Ratbite station edit start
+    - SecurityAmmoRatbiteDynamic
+    # Ratbite station edit end
     # Goobstation Packs
     - SecurityAmmoGoob
     - SecurityWeaponsGoob
@@ -746,6 +752,9 @@
     - SecurityPracticeStatic
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
+    # Ratbite station edit start
+    - SecurityAmmoRatbiteStatic
+    # Ratbite station edit end
     # Goobstation
     - SecurityAmmoStaticGoob
     - SecurityEquipmentStaticGoob
@@ -767,6 +776,9 @@
     - SecurityAmmo
     - SecurityWeapons
     - SecurityDisablers
+    # Ratbite station edit start
+    - SecurityAmmoRatbiteDynamic
+    # Ratbite station edit end
     # Goobstation
     - SecurityWeaponsGoob
     - RestraintTechnology
@@ -815,6 +827,9 @@
       runningState: icon
       staticPacks:
       - SecurityAmmoStatic
+      # Ratbite station edit start
+      - SecurityAmmoRatbiteStatic
+      # Ratbite station edit end
       # Goobstation Packs
       - SecurityAmmoStaticGoob
     - type: EmagLatheRecipes # Goobstation Packs

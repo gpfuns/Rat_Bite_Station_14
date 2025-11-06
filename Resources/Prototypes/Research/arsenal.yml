@@ -114,6 +114,7 @@
   - MagazineBoxMagnumIncendiary
   # - MagazineBoxLightRifleIncendiary # Goobstation - remove light rifle
   - MagazineBoxRifleIncendiary
+  - EnergyMagPistolOverchargeLethal # Ratbite station - more sidearm slop
   # Goobstation R&D Console rework start
   position: 2,2
   technologyPrerequisites:
@@ -135,6 +136,7 @@
   - WeaponMechCombatFiredartLaser # Goobstation
   - WeaponEnergyIonRifle # Goobstation - CR second energy bolt update(and ion)
   - PowerCellIonRevolver # Goobstation
+  - EnergyMagPistolIon # Ratbite station - More sidearm slop
   # Goobstation R&D Console rework start
   position: 4,0
   technologyPrerequisites:
