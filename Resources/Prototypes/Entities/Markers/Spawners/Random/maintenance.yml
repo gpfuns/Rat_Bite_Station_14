@@ -338,6 +338,7 @@
     - !type:GroupSelector
       weight: 75
       children:
+      - id: ToolboxGrey # Ratbite
       - id: FlashlightLantern
       - id: ToolboxEmergencyFilled
       - !type:GroupSelector
