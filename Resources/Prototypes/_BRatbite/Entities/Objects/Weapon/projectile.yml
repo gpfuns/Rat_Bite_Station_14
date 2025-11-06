@@ -34,7 +34,7 @@
     impactEffect: BulletImpactEffectRedDisabler
     damage:
       types:
-        Heat: 16
+        Heat: 19
     soundHit:
       collection: MeatLaserImpact
 
@@ -73,7 +73,7 @@
     impactEffect: BulletImpactEffectBlueDisabler
     damage:
       types:
-        Ion: 20
+        Ion: 25
     soundHit:
       collection: MeatLaserImpact
 
@@ -151,7 +151,7 @@
     impactEffect: BulletImpactEffectRedDisabler
     damage:
       types:
-        Heat: 14
+        Heat: 17
     soundHit:
       collection: MeatLaserImpact
 
@@ -188,7 +188,7 @@
     impactEffect: BulletImpactEffectOrangeDisabler
     damage:
       types:
-        Heat: 3
+        Heat: 5
   - type: IgniteOnCollide
     fireStacks: 2
 
@@ -203,7 +203,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25
+        Piercing: 30
 
 - type: entity
   id: 38BulletMagnumPractice
@@ -226,7 +226,7 @@
     damage:
       types:
         Blunt: 6
-        Heat: 6
+        Heat: 7
 
 - type: entity
   id: 38BulletMagnumUranium
@@ -238,4 +238,4 @@
     damage:
       types:
         Radiation: 15
-        Piercing: 15
+        Piercing: 20
