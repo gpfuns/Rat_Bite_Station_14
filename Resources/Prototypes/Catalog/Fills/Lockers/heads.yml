@@ -160,8 +160,8 @@
     - id: CargoShuttleConsoleCircuitboard
     - id: SalvageMagnetMachineCircuitboard
     - id: SalvageJobBoardComputerCircuitboard
-    - id: CigPackGreen
-      prob: 0.50
+    - id: ClothingOuterHardsuitLuxury
+    - id: FoodBoxDonkpocketStonk
     - id: ClothingHeadsetAltCargo
     - id: DoorRemoteCargo
     - id: RubberStampApproved
@@ -195,6 +195,7 @@
     - id: ClothingOuterArmorCaptainCarapace
     - id: CommsComputerCircuitboard
     - id: DoorRemoteCommand
+    - id: PrinterDocFlatpack
     - id: MedalCase
     - id: NukeDisk
     - id: PinpointerNuclear
@@ -274,6 +275,7 @@
     - id: BoxEncryptionKeyPassenger
     - id: BoxEncryptionKeyService
     - id: BoxHeadset
+    - id: PrinterDocFlatpack
     - id: BoxID
     - id: BoxPDA
     - id: CigarGoldCase
@@ -292,7 +294,7 @@
     - id: RubberStampDenied
     - id: RubberStampHop
     - id: WeaponDisabler
-    - id: ClothingEyesHudCommand
+    - id: ClothingEyesGlassesCommand #Ratbite
     - id: ServiceTechFabCircuitboard # Goobstation - Service Techfab
 
 - type: entity
@@ -315,6 +317,7 @@
     - id: CigarCase
       prob: 0.15
     - id: ClothingBeltChiefEngineerFilled
+    - id: PrinterDocFlatpack
     - id: ClothingEyesGlassesMeson
     - id: ClothingHandsGlovesColorYellow
     - id: ClothingHeadsetAltEngineering
@@ -384,7 +387,9 @@
     - id: ClothingHeadHatBeretCmo
     - id: ClothingHeadsetAltMedical
     - id: ClothingMaskSterile
+    - id: PrinterDocFlatpack
     - id: DoorRemoteMedical
+    - id: BookMedicalOfficer #Ratbite
     # - id: HandheldCrewMonitor # Goobstation - in webbing
     - id: Hypospray
     - id: MedicalTechFabCircuitboard
@@ -398,7 +403,7 @@
     - id: BiomassReclaimerFlatpack
     - id: Multitool
     - id: MedTekCartridge
-    - id: RapidSyringeGun
+    - id: SyringeGun #Ratbite
     - id: BoxSyringePax
     - id: ClothingBeltMilitaryWebbingCMOFilled
     # Shitmed
@@ -459,7 +464,9 @@
     - id: ResearchComputerCircuitboard
     - id: ComputerCargoRequestScienceFlatpack # Goobstation
     - id: RubberStampRd
-    # - id: EncryptionKeyBinary # goobstation - readd the cool binary channel access. fuck you. # Goobstation - WYCI + malf ai major
+    - id: WeaponPistolCHIMP
+    - id: FoodSnackLollypopWrappedCognizine
+    - id: EncryptionKeyBinary # RATBITE
     - id: AnomalyLocator # GoobStation - adding anomaly locator to the RD locker to reduce the amount of anoms that crit
     - id: CigarCase
       prob: 0.15 # GoobStation - RD needs cigs for uhh... science...
@@ -520,9 +527,11 @@
     - id: ClothingOuterCoatHoSTrench
     - id: ClothingShoesBootsJack
     - id: DoorRemoteSecurity
+    - id: PrinterDocFlatpack
     - id: HoloprojectorSecurity
     - id: RubberStampHos
     - id: SecurityTechFabCircuitboard
+    - id: FoodSaladValid
     #- id: WeaponDisabler # Goobstation (Disablers in belts)
     - id: ComputerCargoRequestSecurityFlatpack # Goobstation
     - id: WantedListCartridge
@@ -602,6 +611,7 @@
   - type: StorageFill
     contents:
     - id: CaptainIDCard
+    - id: HeadResomi #go AWAY BYRRNE
     - id: WeaponRevolverDeckard
     - id: JetpackBlue
     - id: SpaceCash1000

@@ -27,6 +27,10 @@
     - id: PepperSpray #Ratbites, AAA GET AWAY
     - id: BriefcaseBrownFilled
     - id: BedsheetCentcom
+    - id: FoodBlackCaviar
+      prob: 0.5
+    - id: FoodRedCaviar
+      prob: 0.5
     - id: CaneSheathFilledNanotrasen
     - id: HandheldFaxNanorep
     - id: RubberStampNanorep
