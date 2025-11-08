@@ -1,0 +1,25 @@
+# RatBite Weapon Unlocks
+
+- type: loadoutEffectGroup
+  id: RevolverUnlock
+  effects:
+    - !type:JobRequirementLoadoutEffect
+      requirement:
+        !type:DepartmentTimeRequirement
+        department: Security
+        time: 54000 #15 hrs
+
+
+# Security Weapons
+- type: loadout
+  id: SecurityMK58
+  equipment:
+    pocket1: WeaponPistolMk58
+
+- type: loadout
+  id: SecurityK38
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: RevolverUnlock
+  equipment:
+    pocket1: WeaponRevolverK38Master
