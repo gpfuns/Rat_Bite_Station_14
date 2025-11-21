@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: 2025 eirinnn <eirinnn@proton.me>
+
+- type: entity
+  id: ClothingUniformJumpsuitTiderPants
+  name: Tider Pants
+  description: These pants gives you the urge to robusting everyone.
+  components:
+  - type: Sprite
+    sprite: _BRatbite/Clothing/Uniforms/Jumpsuit/tider_pants.rsi
+  - type: Clothing
+    sprite: _BRatbite/Clothing/Uniforms/Jumpsuit/tider_pants.rsi
