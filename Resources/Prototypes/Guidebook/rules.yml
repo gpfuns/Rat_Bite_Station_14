@@ -22,7 +22,7 @@
   text: "/ServerInfo/_BRatbite/Guidebook/ServerRules/DefaultServerRules.xml"
 #  children:
 #  - SOP
-  
+
 #- type: guideEntry
 #  id: SOP
 #  name: guide-entry-rules-sop
@@ -31,7 +31,7 @@
 #  text: "/ServerInfo/Guidebook/_Ratbite/ServerRules/SOP/StandardOperatingProcedure.xml"
 #  children:
 #  - CentralCommand
-  
+
 #- type: guideEntry
 #  id: CentralCommand
 #  name: guide-entry-rules-cc
@@ -403,12 +403,40 @@
   text: "/ServerInfo/Guidebook/ServerRules/SpaceLaw/SpaceLaw.xml"
   children:
   - SpaceLawCrimeList
+  - SpaceLawSearches
+  - SpaceLawPunishments
+  - SpaceLawPerma
+  - SpaceLawExecutions
 
 - type: guideEntry
   id: SpaceLawCrimeList
   name: guide-entry-rules-sl-crime-list
   priority: 5
   text: "/ServerInfo/Guidebook/ServerRules/SpaceLaw/SLCrimeList.xml"
+
+- type: guideEntry
+  id: SpaceLawSearches
+  name: SoP, Searches
+  priority: 6
+  text: "/ServerInfo/_Goobstation/Guidebook/SoP/Legal/SearchesSOP.xml"
+
+- type: guideEntry
+  id: SpaceLawPunishments
+  name: SoP, Punishments
+  priority: 6
+  text: "/ServerInfo/_Goobstation/Guidebook/SoP/Legal/PunishmentsSOP.xml"
+
+- type: guideEntry
+  id: SpaceLawPerma
+  name: SoP, Perma Brig
+  priority: 6
+  text: "/ServerInfo/_Goobstation/Guidebook/SoP/Legal/PermaBrigSOP.xml"
+
+- type: guideEntry
+  id: SpaceLawExecutions
+  name: SoP, Executions
+  priority: 6
+  text: "/ServerInfo/_Goobstation/Guidebook/SoP/Legal/ExecutionSOP.xml"
 
 #- type: guideEntry
 #  id: BanTypes

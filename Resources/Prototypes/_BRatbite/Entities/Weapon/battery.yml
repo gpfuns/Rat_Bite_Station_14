@@ -2,7 +2,7 @@
   name: EP-12 Energy Pistol
   parent: [BaseWeaponCustomCellSmall, BaseSecurityContraband]
   id: WeaponEnergyCellPistol
-  description: An energy pistol that are meant to be an alternative to MK58. One of Nanotrasen’s initiative to cut steel waste without sacrificing stopping power.
+  description: A Nanotrasen energy pistol meant to resemble and be an alternative to the standard issue MK-58. Part of one of Nanotrasen’s ongoing cost-saving initiatives to cut material waste without sacrificing much stopping power.
   components:
   - type: AmmoCounter
   - type: Item
@@ -42,3 +42,12 @@
         whitelist:
           tags:
             - EnergyPistolMagAmmo
+  - type: EmitSoundOnPickup
+    sound:
+      collection: LasersPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: LasersDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: LasersDrop

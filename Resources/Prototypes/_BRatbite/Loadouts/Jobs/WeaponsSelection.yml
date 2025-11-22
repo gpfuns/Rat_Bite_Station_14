@@ -7,7 +7,16 @@
       requirement:
         !type:DepartmentTimeRequirement
         department: Security
-        time: 54000 #15 hrs
+        time: 36000 #10 hrs
+
+- type: loadoutEffectGroup
+  id: EnergyPistolUnlock
+  effects:
+    - !type:JobRequirementLoadoutEffect
+      requirement:
+        !type:DepartmentTimeRequirement
+        department: Security
+        time: 72000 #20 hrs
 
 # Security Weapons
 - type: loadout
@@ -25,6 +34,9 @@
 
 - type: loadout
   id: SecurityEP12
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: EnergyPistolUnlock
   name: EP-12 Energy Pistol
   equipment:
     pocket1: WeaponEnergyCellPistol
@@ -48,6 +60,9 @@
 
 - type: loadout
   id: SecurityEP12Ammo
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: EnergyPistolUnlock
   name: EP-12 Energy Pistol
   storage:
     back:
