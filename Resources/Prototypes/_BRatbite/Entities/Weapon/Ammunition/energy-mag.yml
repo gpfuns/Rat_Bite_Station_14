@@ -39,22 +39,22 @@
   - type: ProjectileBatteryAmmoProvider
     proto: PistolBulletEnergyGunLethal
     fireCost: 100
-
-- type: entity
-  id: EnergyMagPistolDisabler
-  parent: [ EnergyPistolMagBase, BaseSecurityContraband ]
-  name: energy pistol magazine (disabler)
-  description: Powercell with an attached power converter that create disabler bolt at the end of energy pistol.
-  components:
-  - type: Sprite
-    layers:
-    - state: disabler
-      map: [ "enum.GunVisualLayers.Base" ]
-    - state: o2
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: ProjectileBatteryAmmoProvider
-    proto: PistolBulletEnergyGunDisabler
-    fireCost: 100
+# Enabling this would enable dual wielded disablers, so no.
+#- type: entity
+#  id: EnergyMagPistolDisabler
+#  parent: [ EnergyPistolMagBase, BaseSecurityContraband ]
+#  name: energy pistol magazine (disabler)
+#  description: Powercell with an attached power converter that create disabler bolt at the end of energy pistol.
+#  components:
+#  - type: Sprite
+#    layers:
+#    - state: disabler
+#      map: [ "enum.GunVisualLayers.Base" ]
+#    - state: o2
+#      map: ["enum.GunVisualLayers.Mag"]
+#  - type: ProjectileBatteryAmmoProvider
+#    proto: PistolBulletEnergyGunDisabler
+#    fireCost: 100
 
 - type: entity
   id: EnergyMagPistolIon

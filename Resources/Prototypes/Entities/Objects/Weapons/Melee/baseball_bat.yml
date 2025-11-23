@@ -86,6 +86,7 @@
     quickEquip: false
     slots:
     - back
+    - suitStorage
   - type: Construction
     graph: WoodenBat
     node: bat

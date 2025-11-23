@@ -390,6 +390,7 @@
   - RainbowJumpsuit
   - RainbowJumpskirt
  # Ratbite Additions
+  - FreakPants
   - MercJumpsuit
   - MercGreenJumpsuit
   - MercBlueJumpsuit
@@ -1129,6 +1130,7 @@
   loadouts:
   - ResearchDirectorLabCoat
   - ResearchDirectorWintercoat
+  - ResearchDirectorSHDJacket
 
 - type: loadoutGroup
   id: ResearchDirectorShoes

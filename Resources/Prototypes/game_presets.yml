@@ -151,7 +151,7 @@
   - extended
   - shittersafari
   name: extended-title
-  showInVote: false 
+  showInVote: true 
   description: extended-description
   rules:
   - PermaBrig # RatBite - Multi-Round brig system
@@ -167,7 +167,7 @@
   - greenshift
   - shittersafarideluxeedition
   name: greenshift-title
-  showInVote: false 
+  showInVote: true 
   description: greenshift-description
   rules:
   - PermaBrig # RatBite - Multi-Round brig system
