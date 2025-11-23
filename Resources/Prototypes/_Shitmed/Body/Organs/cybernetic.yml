@@ -267,5 +267,7 @@
       Destroyed: 0
     slotId: lungs
     onAdd:
+    - type: BreathingImmunity
+    - type: PressureImmunity
     - type: StaminaRegeneration
       regenerationRate: -3.0

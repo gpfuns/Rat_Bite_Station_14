@@ -1037,7 +1037,6 @@
     - id: KingRatMigration
     - id: NinjaSpawn
     - id: ParadoxCloneSpawn
-    - id: LoneOpsSpawn
     - id: DerelictCyborgSpawn
     - id: LoneAbductorSpawn
     - id: DuoAbductorSpawn
@@ -1050,3 +1049,5 @@
     - id: ZombieOutbreak
     - id: SleeperAgents
     - id: HereticMidround #We should work on a better solution to adding heretics to squeakrat, HereticMidround does exsist.
+    - id: LoneOpsSpawn
+

@@ -138,3 +138,11 @@
   id: ResearchDirectorWintercoat
   equipment:
     outerClothing: ClothingOuterWinterRD
+# Ratbite additions
+- type: loadout
+  id: ResearchDirectorSHDJacket
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterRD
+  equipment:
+    outerclothing: ClothingOuterCoatSHDJacket

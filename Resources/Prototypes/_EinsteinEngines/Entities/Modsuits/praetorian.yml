@@ -59,15 +59,18 @@
   description: A pair of gauntlets made for the Praetorian hardsuit. # Goob edit
   categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      sprite: _EinsteinEngines/Clothing/NanoTrasen/Modsuits/praetorian.rsi
-    - type: SealableClothingVisuals
-      spriteLayer: sealed
-      clothingVisuals:
-        gloves:
-        - state: equipped-HAND-sealed
-        - state: equipped-HAND-sealed-unshaded
-          shader: unshaded
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+  - type: Sprite
+    sprite: _EinsteinEngines/Clothing/NanoTrasen/Modsuits/praetorian.rsi
+  - type: SealableClothingVisuals
+    spriteLayer: sealed
+    clothingVisuals:
+      gloves:
+      - state: equipped-HAND-sealed
+      - state: equipped-HAND-sealed-unshaded
+        shader: unshaded
 
 - type: entity
   parent: ClothingModsuitHelmetStandard

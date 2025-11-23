@@ -530,6 +530,10 @@
   id: WeaponPistolCasul
   description: The first of two huge pistols, capable of firing regenerating silver bullets. Incapable of firing without its sister gun.
   components:
+  - type: Reflect
+    reflectProb: 1
+    reflects:
+    - Magic
   - type: Nullrod
     DamageOnUntrainedUse:
       types:
@@ -589,6 +593,10 @@
   id: WeaponPistolJackal
   description: The second of two huge pistols, capable of firing regenerating silver bullets. Incapable of firing without its sister gun.
   components:
+  - type: Reflect
+    reflectProb: 1
+    reflects:
+    - Magic
   - type: Sprite
     sprite: _ShitChap/Objects/Weapons/Nullrod/jackal.rsi
     state: icon

@@ -54,7 +54,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 375
       behaviors: #excess damage, don't spawn entities.
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -63,7 +63,7 @@
           collection: WindowShatter
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 188
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -86,7 +86,7 @@
   - type: Appearance
   - type: DamageVisuals
     thresholds: [5, 10, 20]
-    damageDivisor: 6
+    damageDivisor: 7
     trackAllDamage: true
     damageOverlay:
       sprite: Structures/Windows/cracks.rsi

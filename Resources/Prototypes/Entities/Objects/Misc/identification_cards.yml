@@ -932,18 +932,20 @@
     - state: orange
   - type: Item
     heldPrefix: orange
-  - type: Access
-    tags:
-    - GenpopEnter
+# ratbite changes start
+#  - type: Access 
+#    tags:
+#    - GenpopEnter
   - type: GenpopIdCard
   - type: IdCard
     jobTitle: job-name-prisoner
     jobIcon: JobIconPrisoner
-    canMicrowave: false
-  - type: ExpireIdCard
-    expireMessage: genpop-prisoner-id-expire
-    expiredAccess:
-    - GenpopLeave
+    canMicrowave: true #Ratbite
+#  - type: ExpireIdCard
+#    expireMessage: genpop-prisoner-id-expire
+#    expiredAccess:
+#    - GenpopLeave
+# ratbite changes end
   - type: Speech
     speechVerb: Robotic
   - type: Tag

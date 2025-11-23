@@ -140,6 +140,14 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtColorGrey
 
+# Ratbite ghettoass shirtless tider thing
+- type: loadout
+  id: FreakPants
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterGrey
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitTiderPants
 
 # Rainbow
 - type: loadout
@@ -356,4 +364,3 @@
   id: ServiceMJ
   equipment:
     jumpsuit: ClothingUniformJumpsuitMilitaryService
-
