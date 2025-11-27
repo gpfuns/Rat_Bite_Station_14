@@ -6,7 +6,7 @@
     state: omnilaser
     shader: unshaded
   color: "#00B2FF"
-  protoId: PistolBulletEnergyGunDisabler
+  protoId: PistolBulletEnergyGunDisablerWeak
   fireCost: 50
 
 - type: selectableAmmo
