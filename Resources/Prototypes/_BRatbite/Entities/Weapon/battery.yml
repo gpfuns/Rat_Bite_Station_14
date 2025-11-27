@@ -51,3 +51,79 @@
   - type: EmitSoundOnLand
     sound:
       collection: LasersDrop
+
+- type: entity # I will just say this gun fucking sucks. holy shit.
+  name: PEW-01 Personalize Energy Pistol
+  parent: [BaseWeaponBatterySmall, BaseGrandTheftContraband]
+  id: WeaponEnergyGunLockedEnergyPistol
+  description: placeholder description please replace me boss.
+  components:
+  - type: Sprite
+    sprite: _BRatBites/Objects/Weapon/Battery/pew-1energypistol.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mode
+      shader: unshaded
+      color: "#00B2FF"
+      map: [ "Firemode" ]
+    - state: mag-unshaded-3
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - suitStorage
+    - belt
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_DV/Weapons/Guns/Gunshots/laser.ogg
+    soundEmpty:
+      path: /Audio/_DV/Weapons/Guns/Empty/dry_fire.ogg
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 1000
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletEnergyPistolLethalWeak
+    fireCost: 50
+  - type: AmmoSelector
+    prototypes:
+      - BulletEnergyPistolDisabler
+      - BulletEnergyPistolLethalWeak
+  - type: UserInterface
+    interfaces:
+      enum.AmmoSelectorUiKey.Key:
+        type: AmmoSelectorMenuBoundUserInterface
+  - type: ActivatableUI
+    inHandsOnly: true
+    key: enum.AmmoSelectorUiKey.Key
+  - type: ItemToggle
+    activated: true
+    onActivate: false
+    onUse: false
+    wieldToggle: false
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: true
+  - type: ItemToggleColor
+  - type: Appearance
+  - type: ToggleableLightVisuals
+    spriteLayer: Firemode
+    inhandVisuals:
+      left:
+      - state: mode-inhand-left
+        shader: unshaded
+      right:
+      - state: mode-inhand-right
+        shader: unshaded
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: StaticPrice
+    price: 750
+  - type: FiringPin
+  - type: Lock
+    locked: true
+  - type: AccessReader
+    access: [ [ "Security" ] ]

@@ -1,18 +1,20 @@
 - type: selectableAmmo
   id: BulletEnergyPistolDisabler
-  desc: Causes some amounts of stamina damage.
+  desc: Disabler Bolt.
   icon:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
     state: omnilaser
     shader: unshaded
+  color: "#00B2FF"
   protoId: PistolBulletEnergyGunDisabler
   fireCost: 50
 
 - type: selectableAmmo
   id: BulletEnergyPistolLethalWeak
-  desc: Causes some heat damage on target.
+  desc: Low Energy Bolt.
   icon:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
     state: heavylaser
+  color: red
   protoId: PistolBulletEnergyGunLethalWeak
   fireCost: 50
