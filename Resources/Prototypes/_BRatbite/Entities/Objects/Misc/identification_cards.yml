@@ -68,7 +68,7 @@
 - type: entity
   parent: PassengerIDCard
   id: NTRInternIDCard
-  name: Nanotrasen Intern ID card
+  name: nanotrasen intern ID card
   components:
   - type: PresetIdCard
     job: NTRIntern
@@ -85,7 +85,7 @@
 - type: entity
   parent: PassengerIDCard
   id: NTRLeadInternIDCard
-  name: Nanotrasen Lead Intern ID card
+  name: nanotrasen lead intern ID card
   components:
   - type: PresetIdCard
     job: NTRLeadIntern
