@@ -43,7 +43,7 @@
 - type: siliconLaw
   id: Crewsimov4
   order: 4
-  lawString: law-crewsimov-3
+  lawString: law-crewsimov-4
 
 - type: siliconLawset
   id: Crewsimov
