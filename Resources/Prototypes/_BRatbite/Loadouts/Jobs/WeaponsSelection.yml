@@ -33,6 +33,15 @@
     pocket1: WeaponRevolverK38Master
 
 - type: loadout
+  id: SecurityPEW01
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: EnergyPistolUnlock
+  name: PEW-01 Energy Pistol
+  equipment:
+    pocket1: WeaponEnergyGunLockedEnergyPistol
+
+- type: loadout
   id: SecurityEP12
   effects:
   - !type:GroupLoadoutEffect

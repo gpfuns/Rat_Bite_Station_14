@@ -151,9 +151,50 @@
     impactEffect: BulletImpactEffectRedDisabler
     damage:
       types:
-        Heat: 17
+        Heat: 15
     soundHit:
       collection: MeatLaserImpact
+
+- type: entity
+  name: Pistol disabler bolt
+  id: PistolBulletEnergyGunDisablerWeak
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Reflective
+    reflective:
+    - Energy
+  - type: FlyBySound
+    sound:
+      collection: EnergyMiss
+      params:
+        volume: 5
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+    layers:
+    - state: omnilaser
+      shader: unshaded
+  - type: Ammo
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: false
+        mask:
+        - Opaque
+  - type: StaminaDamageOnCollide
+    damage: 15
+  - type: Projectile
+    impactEffect: BulletImpactEffectBlueDisabler
+    damage:
+      types:
+        Ion: 0
+    soundHit:
+      collection: MeatLaserImpact
+
 
 - type: entity
   id: PistolBulletEnergyGunOvercharge
@@ -191,51 +232,3 @@
         Heat: 5
   - type: IgniteOnCollide
     fireStacks: 2
-
-# .38 Ammo types
-
-- type: entity
-  id: 38BulletMagnum
-  name: bullet (.38 magnum)
-  parent: BaseBullet
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Piercing: 30
-
-- type: entity
-  id: 38BulletMagnumPractice
-  name: bullet (.38 magnum practice)
-  parent: BaseBulletPractice
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Blunt: 1
-
-- type: entity
-  id: 38BulletMagnumIncendiary
-  parent: BaseBulletIncendiary
-  name: bullet (.38 magnum incendiary)
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Blunt: 6
-        Heat: 7
-
-- type: entity
-  id: 38BulletMagnumUranium
-  name: bullet (.38 magnum uranium)
-  parent: BaseBulletUranium
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Radiation: 15
-        Piercing: 20

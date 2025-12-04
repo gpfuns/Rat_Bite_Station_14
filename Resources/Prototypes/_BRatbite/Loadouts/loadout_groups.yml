@@ -30,6 +30,7 @@
   - SecurityMK58
   - SecurityK38
   - SecurityEP12
+  - SecurityPEW01
 
 - type: loadoutGroup
   id: SecurityAmmo
