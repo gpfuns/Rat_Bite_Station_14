@@ -100,3 +100,21 @@
     accentVColor: "#A32D26"
   - type: Icon
     state: pda-engineer
+
+- type: entity
+  parent: CentcomPDA
+  id: NTRInternPDA
+  name: nanotrasen intern PDA
+  description: A company-issued PDA given to an unpaid intern.
+  components:
+  - type: Pda
+    id: NTRInternIDCard
+
+- type: entity
+  parent: CentcomPDA
+  id: NTRLeadInternPDA
+  name: nanotrasen lead intern PDA
+  description: A company-issued PDA given to an intern union leader.
+  components:
+  - type: Pda
+    id: NTRLeadInternIDCard

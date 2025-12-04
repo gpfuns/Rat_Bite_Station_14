@@ -15,3 +15,9 @@
 
 - type: playTimeTracker
   id: JobEngiSentry
+
+- type: playTimeTracker
+  id: JobNTRIntern
+
+- type: playTimeTracker
+  id: JobNTRLeadIntern

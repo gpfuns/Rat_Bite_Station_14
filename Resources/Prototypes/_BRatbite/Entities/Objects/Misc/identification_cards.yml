@@ -64,3 +64,37 @@
     - state: idstationengineer
   - type: PresetIdCard
     job: EngiSentry
+
+- type: entity
+  parent: PassengerIDCard
+  id: NTRInternIDCard
+  name: nanotrasen intern ID card
+  components:
+  - type: PresetIdCard
+    job: NTRIntern
+  - type: Sprite
+    sprite: _BRatBites/Objects/Misc/id-cards.rsi
+    layers:
+    - state: default
+    - state: idintern
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: _BRatBites/Objects/Misc/id-cards.rsi
+
+- type: entity
+  parent: PassengerIDCard
+  id: NTRLeadInternIDCard
+  name: nanotrasen lead intern ID card
+  components:
+  - type: PresetIdCard
+    job: NTRLeadIntern
+  - type: Sprite
+    sprite: _BRatBites/Objects/Misc/id-cards.rsi
+    layers:
+    - state: default
+    - state: idintern
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: _BRatBites/Objects/Misc/id-cards.rsi

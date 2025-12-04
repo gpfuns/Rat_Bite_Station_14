@@ -10,9 +10,14 @@
   - type: Item
     size: Huge
   - type: GhostRole
-    name: ghost-role-lead-intern-name
-    description: ghost-role-intern-desc
+    name: job-name-ntrleadintern # Ratbite - Intern Rework - Edit start
+    description: job-description-ntrleadintern
     rules: ghost-role-lead-intern-rules
+    job: NTRLeadIntern
+    requirements:
+      - !type:DepartmentTimeRequirement
+        department: Command
+        time: 3600 # One hours # Ratbite - Intern Rework - Edit end
   - type: GhostRoleMobSpawner
     prototype: LeadIntern
 
@@ -27,6 +32,10 @@
     randomizeName: true
   - type: Loadout
     prototypes: [LeadInternGear]
+  - type: AutoImplant # Ratbite - Intern Rework
+    implants:
+    - MindShieldImplant
+    - BluespaceLifelineImplant
 
 # Basic Intern Coin
 - type: entity
@@ -39,9 +48,14 @@
     sprite: Objects/Misc/coins.rsi
     state: coin_gold
   - type: GhostRole
-    name: ghost-role-intern-name
-    description: ghost-role-intern-desc
+    name: job-name-ntrintern # Ratbite - Intern Rework - Edit start
+    description: job-description-ntrintern
     rules: ghost-role-intern-rules
+    job: NTRIntern
+    requirements:
+      - !type:DepartmentTimeRequirement
+        department: Command
+        time: 3600 # One hours # Ratbite - Intern Rework - Edit end
   - type: GhostRoleMobSpawner
     prototype: NTIntern
 
@@ -56,11 +70,17 @@
     sprite: Objects/Misc/coins.rsi
     state: coin_silver
   - type: GhostRole
-    name: ghost-role-nerd-intern-name
-    description: ghost-role-intern-desc
+    name: job-name-ntrintern # Ratbite - Intern Rework - Edit start
+    description: job-description-ntrintern
     rules: ghost-role-intern-rules
+    job: NTRIntern
+    requirements:
+      - !type:DepartmentTimeRequirement
+        department: Command
+        time: 3600 # One hours # Ratbite - Intern Rework - Edit end
   - type: GhostRoleMobSpawner
     prototype: NTNerdIntern
+
 
 # Basic NT Intern
 - type: entity
@@ -73,6 +93,10 @@
     randomizeName: true
   - type: Loadout
     prototypes: [NTInternGear]
+  - type: AutoImplant # Ratbite - Intern Rework
+    implants:
+    - MindShieldImplant
+    - BluespaceLifelineImplant
 
 # NT Nerd Intern
 - type: entity
@@ -85,6 +109,10 @@
     randomizeName: true
   - type: Loadout
     prototypes: [NTNerdInternGear]
+  - type: AutoImplant # Ratbite - Intern Rework
+    implants:
+    - MindShieldImplant
+    - BluespaceLifelineImplant
 
 # NT Nerd Intern Gear
 - type: startingGear
@@ -96,9 +124,9 @@
     shoes: ClothingShoesBootsWork
     back: ClothingBackpackCentcomm
     ears: ClothingHeadsetGrey
-    id: PassengerIDCard # let NTR give them access on bridge lol, im too lazy to make a new ID just for interns
-    pocket1: WeaponLaserCellRevolver
-    pocket2: PowerCellHigh
+    id: NTRInternPDA # Ratbite - intern rework goofer -> # let NTR give them access on bridge lol, im too lazy to make a new ID just for interns
+    pocket1: DrinkEnergyDrinkCan # Ratbite
+    pocket2: TelescopicBaton # Ratbite
   inhand:
     - MedkitAdvancedFilled
     - ToolboxElectricalFilled
@@ -106,7 +134,7 @@
     back:
     - ClothingShoesSlippers
     - BoxSurvivalSlotsMedical
-    - Stunbaton
+    #- Stunbaton # Ratbite
 
 # Lead Intern Gear
 - type: startingGear
@@ -120,11 +148,11 @@
     shoes: ClothingShoesLeather
     back: ClothingBackpackCentcomm
     ears: ClothingHeadsetGrey
-    id: PassengerIDCard
+    id: NTRLeadInternPDA # Ratbite - intern rework
     pocket1: DrinkEnergyDrinkCan
     pocket2: TelescopicBaton
-  inhand:
-    - WeaponLaserCarbine
+  #inhand:
+  #  - WeaponLaserCarbine # Ratbite - intern rework
   storage:
     back:
     - NerdInternCoin
@@ -142,13 +170,13 @@
     shoes: ClothingShoesLeather
     back: ClothingBackpackCentcomm
     ears: ClothingHeadsetGrey
-    id: PassengerIDCard
+    id: NTRInternPDA # Ratbite - intern rework
     pocket1: DrinkEnergyDrinkCan
-    pocket2: WeaponDisabler
-  inhand:
-    - WeaponLaserCarbine
+    pocket2: TelescopicBaton # Ratbite - intern rework
+  #inhand:
+  #  - WeaponLaserCarbine # Ratbite - intern rework
   storage:
     back:
     - Vape # interns ammiright?
     - BoxSurvivalSlotsMedical
-    - Stunbaton
+    #- Stunbaton # Ratbite - intern rework
