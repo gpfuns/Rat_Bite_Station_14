@@ -53,10 +53,10 @@
       collection: LasersDrop
 
 - type: entity # this is pure yaml slop fr -cr
-  name: PEW-01 Personalize Energy Pistol
+  name: PEW-01 Personal Energy Pistol
   parent: [BaseWeaponBatterySmall, BaseSecurityContraband]
   id: WeaponEnergyGunLockedEnergyPistol
-  description: Energy pistol with a identification pin that only allow mindshielded user to fire the pistol. Due to bad design of the gun the damage output is lower than regular energy pistol.
+  description: A cheap energy pistol with a mindshield locked trigger, a stun mode as its default state, and a relatively weak lethal energy bolt; Purpose made for NT cadets just getting their feet wet in the station security department.
   components:
   - type: Sprite
     sprite: _BRatBites/Objects/Weapon/Battery/pew-1energypistol.rsi

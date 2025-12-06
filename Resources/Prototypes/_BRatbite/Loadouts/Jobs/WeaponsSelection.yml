@@ -34,10 +34,6 @@
 
 - type: loadout
   id: SecurityPEW01
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: EnergyPistolUnlock
-  name: PEW-01 Energy Pistol
   equipment:
     pocket1: WeaponEnergyGunLockedEnergyPistol
 
