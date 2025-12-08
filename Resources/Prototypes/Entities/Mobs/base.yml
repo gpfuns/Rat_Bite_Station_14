@@ -122,7 +122,7 @@
     active: False
   - type: AnimatedEmotes
   - type: LanguageSpeaker # Einstein Engines - Language. This component is required to support speech, but it does not define known languages.
-  #- type: Fart #Ratbite, this is unenviable goobslop
+  - type: Fart
   - type: CollectiveMind # Goobstation - Starlight collective mind port
   - type: Penetratable # Goobstation - Better snipers
     penetrateDamage: 15 # Kill million mices
