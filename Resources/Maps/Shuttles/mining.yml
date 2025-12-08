@@ -4,7 +4,7 @@ meta:
   engineVersion: 260.2.0
   forkId: ""
   forkVersion: ""
-  time: 12/08/2025 03:51:59
+  time: 12/08/2025 18:30:15
   entityCount: 185
 maps: []
 grids:
@@ -226,8 +226,8 @@ entities:
           -1,-3:
             0: 65504
           -1,-1:
-            0: 61439
-            1: 4096
+            0: 61311
+            1: 4224
           -1,-2:
             0: 65535
           -2,1:
@@ -459,6 +459,22 @@ entities:
     components:
     - type: Transform
       pos: -5.5,-1.5
+      parent: 181
+- proto: BoxLighttube
+  entities:
+  - uid: 140
+    components:
+    - type: Transform
+      parent: 113
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: Brutepack
+  entities:
+  - uid: 176
+    components:
+    - type: Transform
+      pos: -1.6460133,4.6931047
       parent: 181
 - proto: CableApcExtension
   entities:
@@ -779,41 +795,97 @@ entities:
       rot: 3.141592653589793 rad
       pos: -2.5,5.5
       parent: 181
-- proto: ClothingShoesBootsSalvage
+- proto: ClosetWallPink
   entities:
-  - uid: 159
+  - uid: 113
+    components:
+    - type: MetaData
+      name: salvage wall closet
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 0.5,-2.5
+      parent: 181
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14673
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 140
+          - 138
+          - 154
+          - 157
+- proto: ClothingHeadHatSolidHeadband
+  entities:
+  - uid: 157
     components:
     - type: Transform
-      parent: 158
+      parent: 113
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-  - uid: 162
+- proto: ClothingShoesBootsSalvage
+  entities:
+  - uid: 138
     components:
     - type: Transform
-      parent: 161
+      parent: 113
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
 - proto: ClothingUniformJumpsuitMilitarySalvageSpecialist
   entities:
-  - uid: 160
+  - uid: 154
     components:
     - type: Transform
-      parent: 158
+      parent: 113
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-  - uid: 163
+- proto: Cobweb1
+  entities:
+  - uid: 158
     components:
     - type: Transform
-      parent: 161
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
+      pos: -4.5,-0.5
+      parent: 181
+  - uid: 167
+    components:
+    - type: Transform
+      pos: -5.5,2.5
+      parent: 181
+- proto: Cobweb2
+  entities:
+  - uid: 177
+    components:
+    - type: Transform
+      pos: -0.5,-0.5
+      parent: 181
 - proto: ComputerSalvageExpedition
   entities:
-  - uid: 94
+  - uid: 95
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
@@ -841,13 +913,12 @@ entities:
     - type: Transform
       pos: -5.5,1.5
       parent: 181
-- proto: DefibrillatorCabinetFilled
+- proto: DrinkMugOne
   entities:
-  - uid: 167
+  - uid: 94
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 0.5,-2.5
+      pos: -2.7484176,6.3784943
       parent: 181
 - proto: FoodFrozenSnowconeTrash
   entities:
@@ -880,6 +951,13 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -3.5,-4.5
+      parent: 181
+- proto: Gauze
+  entities:
+  - uid: 170
+    components:
+    - type: Transform
+      pos: -1.3803883,4.4743547
       parent: 181
 - proto: GeneratorBasic
   entities:
@@ -986,98 +1064,21 @@ entities:
     - type: Transform
       pos: -2.5,3.5
       parent: 181
-- proto: LockerSalvageSpecialist
+- proto: LightBulb
   entities:
-  - uid: 158
+  - uid: 160
     components:
     - type: Transform
-      anchored: True
-      pos: -4.5,-0.5
+      rot: -1.5707963267948966 rad
+      pos: -4.8072214,2.7628412
       parent: 181
-    - type: Physics
-      bodyType: Static
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14673
-        moles:
-        - 1.7459903
-        - 6.568249
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 159
-          - 160
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-  - uid: 161
-    components:
-    - type: Transform
-      anchored: True
-      pos: -3.5,-0.5
-      parent: 181
-    - type: Physics
-      bodyType: Static
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14673
-        moles:
-        - 1.7459903
-        - 6.568249
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 162
-          - 163
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-- proto: MedkitFilled
+- proto: LightTubeBroken
   entities:
-  - uid: 170
+  - uid: 52
     components:
     - type: Transform
-      pos: -0.5224278,-3.446013
+      rot: -1.5707963267948966 rad
+      pos: -0.21446705,-2.9889264
       parent: 181
 - proto: OreBox
   entities:
@@ -1094,53 +1095,49 @@ entities:
     - type: Transform
       pos: -1.501993,4.536272
       parent: 181
-- proto: Poweredlight
+- proto: PoweredlightEmpty
   entities:
-  - uid: 95
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -3.5,3.5
-      parent: 181
-  - uid: 113
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 0.5,1.5
-      parent: 181
-  - uid: 138
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -4.5,-0.5
-      parent: 181
-  - uid: 140
+  - uid: 162
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -0.5,-0.5
       parent: 181
-  - uid: 176
+  - uid: 163
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -0.5,-4.5
       parent: 181
-  - uid: 177
+- proto: PoweredlightSodium
+  entities:
+  - uid: 159
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -3.5,3.5
+      parent: 181
+  - uid: 161
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -4.5,-0.5
+      parent: 181
+  - uid: 164
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 0.5,1.5
+      parent: 181
+  - uid: 180
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -4.5,-4.5
       parent: 181
-  - uid: 178
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -1.5,3.5
-      parent: 181
-- proto: PoweredSmallLight
+- proto: PoweredSmallLightEmpty
   entities:
-  - uid: 180
+  - uid: 178
     components:
     - type: Transform
       pos: -5.5,2.5
@@ -1151,18 +1148,6 @@ entities:
     components:
     - type: Transform
       pos: -2.5,-2.5
-      parent: 181
-- proto: Rack
-  entities:
-  - uid: 52
-    components:
-    - type: Transform
-      pos: -0.5,-4.5
-      parent: 181
-  - uid: 154
-    components:
-    - type: Transform
-      pos: -0.5,-3.5
       parent: 181
 - proto: RandomPosterAny
   entities:
@@ -1182,13 +1167,6 @@ entities:
     components:
     - type: Transform
       pos: -3.5,2.5
-      parent: 181
-- proto: SalvageLootSpawner
-  entities:
-  - uid: 164
-    components:
-    - type: Transform
-      pos: -0.5,-4.5
       parent: 181
 - proto: SignalButtonExt1
   entities:
@@ -1272,13 +1250,6 @@ entities:
     components:
     - type: Transform
       pos: -1.5380528,-0.5116854
-      parent: 181
-- proto: VendingMachineSalvage
-  entities:
-  - uid: 157
-    components:
-    - type: Transform
-      pos: -0.5,-0.5
       parent: 181
 - proto: VendingMachineTankDispenserEVA
   entities:
