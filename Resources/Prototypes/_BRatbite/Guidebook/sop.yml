@@ -37,3 +37,10 @@
   - NanotrasenRep SOP
   - BlueshieldOfficer SOP
   - RedsightOverseer SOP
+
+# Security Additions SOP
+
+- type: guideEntry
+  id: DepartmentalGuard SOP
+  name: Departmental Security SOP
+  text: "/ServerInfo/_BRatbite/Guidebook/SoP/Jobs/StationJobs/DepartmentalGuardSOP.xml"
